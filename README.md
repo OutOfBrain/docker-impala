@@ -1,8 +1,8 @@
-Dockerfile for Cloudera Impala 2.0.1
+Dockerfile for Cloudera Impala 2.9.0
 ==
-This Dockerfile runs a [Cloudera Impala 2.0.1](http://impala.io/) server on a single node Hadoop Cluster.
+This Dockerfile runs a [Cloudera Impala 2.9.0](http://impala.io/) server on a single node Hadoop Cluster.
 
-It's based on a Ununtu 14.04
+It's based on a Ununtu Xenial (16)
 
 ---------
 
@@ -20,7 +20,8 @@ docker build -t codingtony/impala .
 The image is quite big (1.5GB). It might take a while to download the first time.
 
 
-##Features
+Features
+---
 
 It runs a single node cluster with a datanode and a namenode running on the same machine.
 It also runs Impala server, Impala state store and Impala catalog
